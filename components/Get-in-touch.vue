@@ -40,6 +40,9 @@ export default {}
           font-weight: 400;
           line-height: 1.4;
           font-size: 2.1rem !important;
+          @media (max-width: 768px) {
+            margin-bottom: 1em;
+          }
         }
         .get-in-touch-btn {
           background-image: linear-gradient(

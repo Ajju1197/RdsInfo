@@ -190,7 +190,11 @@ export default {}
     }
   }
   .social-links {
-    width: 31%;
+    width: 40%;
+    @media (max-width: 576px) {
+      margin-bottom: 1em;
+      width: 50%;
+    }
   }
   .subscribe-content {
     p {

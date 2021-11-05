@@ -1,8 +1,12 @@
 <template>
   <div class="mb-5 card-section">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4" v-for="card in cards" :key="card.id">
+      <div class="row" style="row-gap: 2em">
+        <div
+          class="col-lg-4 col-md-6 col-12 pl-4"
+          v-for="card in cards"
+          :key="card.id"
+        >
           <div class="card">
             <div class="images">
               <nuxt-img

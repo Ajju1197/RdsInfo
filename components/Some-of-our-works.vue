@@ -1,4 +1,4 @@
-<template >
+<template>
   <div class="container my-5">
     <div class="some-of-our-works-section">
       <div class="section-heading">
@@ -6,7 +6,7 @@
       </div>
       <div class="row main-card">
         <div
-          class="work-projects-block col-md-4"
+          class="work-projects-block col-md-4 pl-4"
           v-for="post in posts"
           :key="post.id"
         >
@@ -76,6 +76,9 @@ export default {
     font-size: 2.5rem !important;
     font-weight: 400;
     color: #444 !important;
+    @media (max-width: 576px) {
+      text-align: center;
+    }
   }
 }
 .main-card {

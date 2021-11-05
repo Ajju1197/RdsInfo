@@ -170,4 +170,14 @@ export default {
   color: #fff;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+@media (max-width: 768px) {
+  .el-carousel__container {
+    height: 60vh !important;
+  }
+}
+@media (max-width: 576px) {
+  .el-carousel__container {
+    height: 40vh !important;
+  }
+}
 </style>
