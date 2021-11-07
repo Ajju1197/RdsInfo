@@ -6,7 +6,7 @@
       </div>
       <div class="row main-card">
         <div
-          class="work-projects-block col-md-4 pl-4"
+          class="work-projects-block col-lg-4 col-md-6 col-sm-6"
           v-for="post in posts"
           :key="post.id"
         >
@@ -90,6 +90,10 @@ export default {
       position: relative;
       width: 100%;
       height: 100%;
+      @media (max-width: 576px) {
+        width: 80%;
+        margin: auto;
+      }
       img {
         height: 100%;
       }

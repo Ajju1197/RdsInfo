@@ -191,8 +191,8 @@ export default {}
   }
   .social-links {
     width: 40%;
+    margin-bottom: 1em;
     @media (max-width: 576px) {
-      margin-bottom: 1em;
       width: 50%;
     }
   }
@@ -228,6 +228,11 @@ export default {}
   column-gap: 1em;
   display: flex;
   justify-content: center;
+  @media (max-width: 576px) {
+    flex-direction: column;
+    padding: 10px 30px;
+    text-align: center;
+  }
   .copy-content {
     margin: 0;
     font-size: 18px;

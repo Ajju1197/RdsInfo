@@ -71,6 +71,9 @@ export default {
     font-weight: 700;
     font-size: 3.5rem;
     line-height: 1.2;
+    @media (max-width: 576px) {
+      font-size: 1.8em !important;
+    }
   }
 }
 .whyrds-content {

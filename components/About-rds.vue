@@ -1,4 +1,4 @@
-<template >
+<template>
   <div class="about-rds">
     <div class="container">
       <div class="row">
@@ -64,6 +64,11 @@ export default {
       font-size: 2em;
       font-weight: 400;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      @media (max-width: 576px) {
+        font-size: 1.5em;
+        text-align: center;
+        margin-top: 1em;
+      }
     }
   }
   .section-content {
@@ -74,11 +79,17 @@ export default {
       line-height: 40px;
       text-align: justify;
       font-weight: 300 !important;
+      @media (max-width: 576px) {
+        font-size: 16px;
+      }
     }
   }
   .buttons {
     display: flex;
     justify-content: flex-end;
+    @media (max-width: 576px) {
+      justify-content: center;
+    }
     .read-more-btn {
       padding: 16px 32px;
       color: #fff;

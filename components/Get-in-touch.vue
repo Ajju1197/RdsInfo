@@ -54,6 +54,9 @@ export default {}
           font-size: 20px;
           padding: 15px;
           color: #000000;
+          @media (max-width: 576px) {
+            font-size: 12px;
+          }
         }
       }
     }

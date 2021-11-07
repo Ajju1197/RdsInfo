@@ -4,8 +4,8 @@
       <el-carousel-item v-for="item in items" :key="item.id">
         <!-- <img :src="item.image_src" alt="slider-image" /> -->
         <nuxt-img
+          sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw"
           :src="item.image_src"
-          height="670"
           alt="slider-image"
           format="webp"
           quality="80"

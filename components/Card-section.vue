@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row" style="row-gap: 2em">
         <div
-          class="col-lg-4 col-md-6 col-12 pl-4"
+          class="col-lg-4 col-md-6 col-sm-6"
           v-for="card in cards"
           :key="card.id"
         >
@@ -70,6 +70,17 @@ export default {
   padding: 0;
   min-height: 537px;
   border-radius: 10px;
+}
+@media (max-width: 576px) {
+  .card-section .card {
+    width: 60%;
+    min-height: auto;
+  }
+}
+@media (max-width: 450px) {
+  .card-section .card {
+    width: 100%;
+  }
 }
 
 .card img {

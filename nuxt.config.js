@@ -24,7 +24,6 @@ export default {
     css: [
         'bootstrap/dist/css/bootstrap.css',
         'bootstrap-vue/dist/bootstrap-vue.css',
-      
     ],
     PageTransition: "fade",
 
@@ -32,7 +31,6 @@ export default {
     plugins: [
         '~plugins/bootstrap.js', "@/plugins/element-ui",
     ],
-
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,
 
@@ -70,7 +68,10 @@ export default {
               },
             },
           },
-      }, 
+    },
+    generate: {
+        fallback: true
+      },
     // Axios module configuration: https://go.nuxtjs.dev/config-axios
     axios: {},
 
